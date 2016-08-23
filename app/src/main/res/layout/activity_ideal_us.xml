@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ideal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter Your Age"
+        android:id="@+id/textView5"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText6"
+        android:hint="years"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Height"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/editText6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/editText7"
+        android:hint="feet"
+        android:layout_weight="0.20"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText8"
+        android:layout_marginTop="15dp"
+        android:hint="inches"
+        android:layout_weight="0.20"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/bid"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/radiosex"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:id="@+id/radiosex"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editText8"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <RadioButton
+            android:id="@+id/radiomale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:checked="true"
+            android:text="@string/radiob_male" />
+        <RadioButton
+            android:id="@+id/radiofemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08"
+            android:text="@string/radiob_female"
+            android:checked="false" />
+
+
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText9"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/bid"/>
+
+</RelativeLayout>

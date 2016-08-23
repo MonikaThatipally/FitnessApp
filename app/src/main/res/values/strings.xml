@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Fitness</string>
+ <string name="tab1_fragment_string">Tab1</string>
+    <string name="tab2_fragment_string">Tab2</string>
+    <string name="bmi_calculator">BMI</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="your">your</string>
+    <string name="ok">OK</string>
+    <string name="reset">Reset</string>
+    <string name="resetm">Reset</string>
+    <string name="radio_male">male</string>
+    <string name="radio_female">female</string>
+    <string name="tabradio_male">male</string>
+    <string name="tabradio_female">female</string>
+    <string name="kg">kg</string>
+    <string name="cm">cm</string>
+    <string name="pounds">pounds</string>
+    <string name="feet">feet</string>
+    <string name="inch">inch</string>
+    <string name="bmr_calculator">BMR</string>
+    <string name="weightb">Weight</string>
+    <string name="heightb">Height</string>
+    <string name="yourb">your</string>
+    <string name="okb">OK</string>
+    <string name="ageb">age</string>
+    <string name="radiob_male">male</string>
+    <string name="radiob_female">female</string>
+    <string name="resetb">Reset</string>
+    <string name="resetbb">Reset</string>
+
+
+    <string name="country_prompt">Choose a country</string>
+    <string-array name="country_arrays">
+        <item>Activity Level</item>
+        <item>Sedentary</item>
+        <item>Lightly Active</item>
+        <item>Moderatetely Active</item>
+        <item>Very Active</item>
+        <item>Extra Active</item>
+
+    </string-array>
+</resources>
