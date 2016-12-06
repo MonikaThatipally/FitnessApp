@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -21,14 +22,14 @@ public class BMImetric extends Activity {
         Button btr=(Button)findViewById(R.id.button2);
         final EditText et=(EditText)findViewById(R.id.editText);
         final  EditText et2=(EditText)findViewById(R.id.editText2);
-        final EditText et3=(EditText)findViewById(R.id.editText3);
+        final TextView et3=(TextView) findViewById(R.id.editText3);
 
     btr.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
             et.getText().clear();
             et2.getText().clear();
-            et3.getText().clear();
+            et3.setText("");
 
         }
     });

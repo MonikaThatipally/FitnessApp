@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class BMIus extends Activity {
@@ -20,14 +21,14 @@ public class BMIus extends Activity {
         final EditText tet=(EditText)findViewById(R.id.tabeditText);
         final  EditText tet2=(EditText)findViewById(R.id.tabeditText2feet);
         final EditText tetnew=(EditText)findViewById(R.id.tabeditText2inch);
-        final EditText tet3=(EditText)findViewById(R.id.tabeditText3);
+        final TextView tet3=(TextView)findViewById(R.id.tabeditText3);
         tbtm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 tet.getText().clear();
                 tet2.getText().clear();
                 tetnew.getText().clear();
-                tet3.getText().clear();
+               tet3.setText("");
 
             }
         });

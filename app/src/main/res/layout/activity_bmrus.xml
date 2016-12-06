@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/cal">
+    android:background="@drawable/bmr">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,12 +23,12 @@
         android:layout_marginTop="5dp"
         android:textColor="#f90c0c"
         android:layout_below="@+id/textView"
-        android:textSize="20sp"/>
+        android:textSize="25dp"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="numberDecimal|numberSigned"
         android:ems="10"
         android:id="@+id/editText"
         android:layout_below="@+id/textView2"
@@ -45,7 +45,7 @@
         android:layout_marginTop="5dp"
         android:textColor="#e10606"
         android:layout_below="@+id/editText"
-        android:textSize="20sp"/>
+        android:textSize="25dp"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -81,7 +81,7 @@
         android:layout_marginTop="5dp"
         android:textColor="#e10606"
         android:layout_below="@+id/editText2"
-        android:textSize="20sp"/>
+        android:textSize="25dp"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -113,14 +113,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.05"
             android:checked="true"
-            android:text="@string/radiob_male" />
+            android:text="@string/radiob_male"
+            android:textColor="#f90c0c"
+            android:textSize="25dp" />
         <RadioButton
             android:id="@+id/radiofemale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.08"
             android:text="@string/radiob_female"
-            android:checked="false" />
+            android:checked="false"
+            android:textColor="#f90c0c"
+            android:textSize="25dp" />
 
 
     </RadioGroup>
@@ -152,7 +156,7 @@
         android:layout_centerHorizontal="true" />
 
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/editText3"

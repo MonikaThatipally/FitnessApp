@@ -4,7 +4,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bmipic">
+    android:background="@drawable/bmit">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,12 +24,12 @@
         android:layout_marginTop="15dp"
         android:textColor="#f90c0c"
         android:layout_below="@+id/tabtextView"
-        android:textSize="20sp"/>
+        android:textSize="25dp"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="numberDecimal|numberSigned"
         android:ems="5"
         android:id="@+id/tabeditText"
         android:layout_below="@+id/tabtextView2"
@@ -47,7 +47,7 @@
         android:id="@+id/tabtextView3"
         android:textColor="#e10606"
         android:layout_below="@+id/tabeditText"
-        android:textSize="20sp"
+        android:textSize="25dp"
         android:layout_marginTop="15dp"/>
 
     <EditText
@@ -88,14 +88,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.05"
             android:checked="true"
-            android:text="@string/tabradio_male" />
+            android:text="@string/tabradio_male"
+            android:textColor="#f90c0c"
+            android:textSize="25dp" />
         <RadioButton
             android:id="@+id/tabradiofemale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.08"
             android:text="@string/tabradio_female"
-            android:checked="false" />
+            android:checked="false"
+            android:textColor="#f90c0c"
+            android:textSize="25dp" />
 
 
     </RadioGroup>
@@ -117,7 +121,7 @@
         android:layout_alignLeft="@+id/tabeditText2inch"
         android:layout_alignStart="@+id/tabeditText2inch" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tabeditText3"

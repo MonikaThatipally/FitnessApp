@@ -14,12 +14,14 @@
         android:layout_marginTop="15dp"
         android:layout_below="@+id/textView"
         android:layout_alignParentStart="true"
-        android:textSize="20sp" />
+        android:textSize="25dp"
+        android:textColor="#f90c0c" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editText6"
+        android:inputType="number"
         android:hint="years"
         android:layout_below="@+id/textView5"
         android:layout_marginTop="15dp"
@@ -30,18 +32,20 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Height"
-        android:textSize="20sp"
+        android:textSize="25dp"
         android:layout_marginTop="15dp"
         android:id="@+id/textView6"
         android:layout_below="@+id/editText6"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textColor="#f90c0c" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:id="@+id/editText7"
+        android:inputType="number"
         android:hint="feet"
         android:layout_weight="0.20"
         android:layout_below="@+id/textView6"
@@ -52,6 +56,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/editText8"
         android:layout_marginTop="15dp"
+        android:inputType="number"
         android:hint="inches"
         android:layout_weight="0.20"
         android:layout_below="@+id/textView6"
@@ -70,6 +75,14 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:id="@+id/reid"
+        android:layout_alignTop="@+id/bid"
+        android:layout_toEndOf="@+id/textView5" />
+
     <RadioGroup
         android:id="@+id/radiosex"
         android:layout_width="300dp"
@@ -84,19 +97,23 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.05"
             android:checked="true"
-            android:text="@string/radiob_male" />
+            android:text="@string/radiob_male"
+            android:textColor="#f90c0c"
+            android:textSize="25dp" />
         <RadioButton
             android:id="@+id/radiofemale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.08"
             android:text="@string/radiob_female"
-            android:checked="false" />
+            android:checked="false"
+            android:textColor="#f90c0c"
+            android:textSize="25dp" />
 
 
     </RadioGroup>
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/editText9"

@@ -3,7 +3,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bmipic"
+    android:background="@drawable/bmit"
     >
 
     <RelativeLayout
@@ -35,14 +35,14 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="number"
         android:ems="10"
         android:id="@+id/editText"
         android:layout_below="@+id/textView2"
         android:layout_marginTop="20dp"
         android:textColor="#fa1818"
         android:hint="@string/kg"
-        android:textSize="25dp" />
+        android:textSize="25dp"
+        android:inputType="numberDecimal|numberSigned"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -58,14 +58,14 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="number"
         android:ems="10"
         android:id="@+id/editText2"
         android:layout_marginTop="20dp"
         android:layout_below="@+id/textView3"
         android:textColor="#f50c0c"
         android:hint="@string/cm"
-        android:textSize="25dp" />
+        android:textSize="25dp"
+        android:inputType="numberDecimal|numberSigned"/>
 
 
 
@@ -84,7 +84,8 @@
             android:layout_weight="0.05"
             android:checked="true"
             android:text="@string/radio_male"
-            android:textSize="25dp"/>
+            android:textSize="25dp"
+            android:textColor="#f90c0c" />
         <RadioButton
             android:id="@+id/radiofemale"
             android:textSize="25dp"
@@ -92,7 +93,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.08"
             android:text="@string/radio_female"
-            android:checked="false" />
+            android:checked="false"
+            android:textColor="#f90c0c" />
 
 
     </RadioGroup>
@@ -116,7 +118,7 @@
         android:layout_alignLeft="@+id/textView"
         android:layout_alignStart="@+id/textView" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"

@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class IdealUs extends AppCompatActivity {
@@ -21,13 +22,22 @@ public class IdealUs extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ideal_us);
         Button bt=(Button)findViewById(R.id.bid);
+        Button btr=(Button)findViewById(R.id.reid);
 
         final EditText et=(EditText)findViewById(R.id.editText6);
         final  EditText et2=(EditText)findViewById(R.id.editText7);
         final  EditText et8=(EditText)findViewById(R.id.editText8);
-        final  EditText et9=(EditText)findViewById(R.id.editText9);
+        final  TextView et9=(TextView)findViewById(R.id.editText9);
 
-
+        btr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                et.getText().clear();
+                et2.getText().clear();
+                et8.getText().clear();
+                et9.setText("");
+            }
+        });
 
         rg=(RadioGroup)findViewById(R.id.radiosex);
 
@@ -51,6 +61,8 @@ public class IdealUs extends AppCompatActivity {
                             selectedId = rg.getCheckedRadioButtonId();
                             RadioButton maleref = (RadioButton) findViewById(selectedId);
 
+                            if(ag <110 && hgt<=7 && inc<=12) {
+
 
                             double male = 56.2 + 1.41*inc;
                             double female=52 + 0.01*inc;
@@ -66,7 +78,10 @@ public class IdealUs extends AppCompatActivity {
                                 et9.setText(String.format( "your ideal body weight is: %f", female) );
                             }
 
+                            } else {
+                                Toast.makeText(IdealUs.this,"Please input the corect values",Toast.LENGTH_LONG).show();
 
+                            }
 
                         }
                         catch (NumberFormatException e)

@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class BMRus extends AppCompatActivity {
@@ -17,7 +18,7 @@ public class BMRus extends AppCompatActivity {
     double ag;
     private EditText et;
     private EditText et2;
-    private EditText et3;
+    private TextView et3;
     private EditText et4;
     private EditText et5;
     private RadioGroup rg;
@@ -42,7 +43,7 @@ public class BMRus extends AppCompatActivity {
         Button bt=(Button)findViewById(R.id.button);
         et=(EditText)findViewById(R.id.editText);
         et2=(EditText)findViewById(R.id.editText2);
-        et3=(EditText)findViewById(R.id.editText3);
+        et3=(TextView)findViewById(R.id.editText3);
         et4=(EditText)findViewById(R.id.editText4);
         et5=(EditText)findViewById(R.id.editText5);
         rg=(RadioGroup)findViewById(R.id.radiosex);
@@ -55,7 +56,7 @@ public class BMRus extends AppCompatActivity {
             public void onClick(View view) {
                 et.getText().clear();
                 et2.getText().clear();
-                et3.getText().clear();
+                et3.setText("");
                 et4.getText().clear();
                 et5.getText().clear();
 
@@ -93,6 +94,8 @@ public class BMRus extends AppCompatActivity {
 
                             String spintext= spinner1.getSelectedItem().toString();
 
+                            if(wgt <= 450 && hgt<=7 && hgtin<=12 && ag<110) {
+
 
                             male=66 + ( 6.23 * wgt ) + ( 12.7 *((hgt * 12) + hgtin) ) - ( 6.8 *ag );
 
@@ -105,27 +108,27 @@ public class BMRus extends AppCompatActivity {
                             float ssed = (float) Math.round(sed * 100) / 100;
 
                             la=male*1.375;
-                            float sla = (float) Math.round(sed * 100) / 100;
+                            float sla = (float) Math.round(la * 100) / 100;
 
                             ma=male*1.55;
-                            float sma= (float) Math.round(sed * 100) / 100;
+                            float sma= (float) Math.round(ma * 100) / 100;
 
                             va=male*1.725;
-                            float sva = (float) Math.round(sed * 100) / 100;
+                            float sva = (float) Math.round(va * 100) / 100;
 
                             ea=male*1.9;
-                            float sea = (float) Math.round(sed * 100) / 100;
+                            float sea = (float) Math.round(ea * 100) / 100;
 
                             fsed=female*1.2;
-                            float sfsed = (float) Math.round(sed * 100) / 100;
+                            float sfsed = (float) Math.round(fsed * 100) / 100;
                             fla=female*1.375;
-                            float sfla = (float) Math.round(sed * 100) / 100;
+                            float sfla = (float) Math.round(fla * 100) / 100;
                             fma=female*1.55;
-                            float sfma = (float) Math.round(sed * 100) / 100;
+                            float sfma = (float) Math.round(fma * 100) / 100;
                             fva=female*1.725;
-                            float sfva = (float) Math.round(sed * 100) / 100;
+                            float sfva = (float) Math.round(fva * 100) / 100;
                             fea=female*1.9;
-                            float sfea = (float) Math.round(sed * 100) / 100;
+                            float sfea = (float) Math.round(fea * 100) / 100;
 
                             if(selectedId==R.id.radiomale && spintext.equals("Sedentary")){
 
@@ -177,12 +180,12 @@ public class BMRus extends AppCompatActivity {
                             }
                             else
                             {
-                                Toast.makeText(BMRus.this,"Please input values",Toast.LENGTH_LONG).show();
+                                Toast.makeText(BMRus.this,"Please select the Activity level",Toast.LENGTH_LONG).show();
                             }
+                            } else {
+                                Toast.makeText(BMRus.this,"Please input the corect values",Toast.LENGTH_LONG).show();
 
-
-
-
+                            }
                         }catch (NumberFormatException e){
                             Toast.makeText(BMRus.this,"Please input the values",Toast.LENGTH_LONG).show();
                         }

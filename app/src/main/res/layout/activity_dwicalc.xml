@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/water">
+    android:background="@drawable/waterph">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -11,7 +11,8 @@
         android:id="@+id/tid"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp" />
+        android:layout_marginTop="34dp"
+        android:textColor="#f90c0c" />
 
     <EditText
         android:layout_width="match_parent"
@@ -21,7 +22,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginTop="37dp"
-        android:hint="kg"/>
+        android:hint="kg"
+        android:inputType="numberDecimal|numberSigned"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -33,7 +35,7 @@
         android:layout_marginTop="40dp"
         android:onClick="buttonClicked" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tid2"
